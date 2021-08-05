@@ -1,0 +1,106 @@
+.check-table {
+    width: 785px;
+    border-collapse: collapse;
+    text-align: left;
+    margin: 50px auto 25px;
+    font-weight: bold;
+    color: $black;
+    background-color: $beige;
+    border: 2px solid $gray;
+    > tr:nth-child(1) {
+        background-color: $blue;
+        color: $beige;
+        font-size: 175%;
+        > td {
+            padding: 5px 0 5px 15px;
+        }
+    }
+    > tr:not(:first-child) {
+        > td:nth-child(1) {
+            padding: 15px 50px 15px 15px;
+            white-space: nowrap;
+        }
+        > td:not(:first-child) {
+            padding: 15px 15px 15px 50px;
+            word-break: break-all;
+        }
+    }
+    > tr {
+        font-size: 150%;
+        border-bottom: 1px solid $gray;
+    }
+}
+.check-page {
+    > .pay {
+        margin: 20px auto;
+        text-align: center;
+        > button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            font-weight: bold;
+            color: $beige;
+            font-size: 125%;
+            background-color: $blue;
+            border-radius: 5px;
+            border: none;
+        }
+    }
+}
+.check-page > .pay > button:hover {
+    background-color: $darkblue;
+    cursor: pointer;
+}
+.cart-empty {
+    width: 200px;
+    margin: 15% auto;
+    text-align: center;
+    font-size: 200%;
+    font-weight: bold;
+    color: $black;
+}
+
+@media (max-width: 1200px) {
+    .check-table {
+        width: 650px;
+        > tr:nth-child(1) {
+            font-size: 150%;
+        }
+        > tr {
+            font-size: 125%;
+        }
+    } 
+}
+@media (max-width: 850px) {
+    .check-table {
+        width: 480px;
+        margin: 35px auto 25px;
+        > tr:nth-child(1) {
+            font-size: 125%;
+        }
+        > tr {
+            font-size: 110%;
+        }
+    }
+    .check-page > .pay > button {
+        margin-top: 0;
+        border: none;
+    }
+}
+@media (max-width: 600px) {
+    .check-table {
+        width: 250px;
+        > tr:nth-child(1) {
+            font-size: 100%;
+        }
+        > tr:not(:first-child) > td:nth-child(1) {
+            padding: 15px;
+        }
+        > tr {
+            font-size: 75%;
+        }
+    }
+    .check-page > .pay > button {
+        padding: 10px 15px;
+        font-size: 100%;
+    }
+}

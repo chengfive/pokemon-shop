@@ -1,0 +1,57 @@
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#nav {
+    color: $beige;
+    font-size: 150%;
+    background-color: $blue;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .home-logo {
+        width: 245px;
+    }
+    span {
+        vertical-align: middle;
+    }
+    img {
+        height: 50px;
+        margin: 5px;
+        vertical-align: middle;
+    }
+    a {
+        font-weight: bold;
+        color: $beige;
+    }
+    > .cart-a {
+        margin-left: auto;
+        margin-right: 10px;
+    }
+    > .login {
+        margin-right: 20px;
+    }
+    > .logout {
+        @extend .login;
+    }
+}
+
+@media (max-width: 600px) {
+    #nav {
+        font-size: 100%;
+        .home-logo {
+            width: 185px;
+        }
+        img {
+            height: 35px;
+        }
+        > .cart-a {
+            margin-right: 0;
+        }
+        > .login {
+            margin-right: 10px;
+        }
+    }
+}

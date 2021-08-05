@@ -1,0 +1,77 @@
+.order {
+    width: 500px;
+    font-weight: bold;
+    margin: 50px auto;
+    padding: 20px 5px 30px;
+    text-align: center;
+    color: $black;
+    border: 2px solid $gray;
+    border-radius: 10px;
+    background-color: $beige;
+    .form {
+        width: 400px;
+        text-align: left;
+        margin: 0 auto;
+        > input {
+            width: 400px;
+            padding: 5px;
+            font-weight: bold;
+            font-size: 100%;
+            color: $black;
+            margin: 5px 0;
+            border: 2px solid $gray;
+            background-color: $white;
+        }
+        > .remark {
+            @extend input;
+            font-family: Avenir, Helvetica, Arial, sans-serif;
+            resize: none;
+            word-break: break-all;
+        }
+        > label {
+            display: block;
+            font-size: 125%;
+            margin-top: 10px;
+            > span {
+                color: $red;
+                font-size: 85%;
+            }
+        }
+    }
+    > form > input {
+        margin-top: 30px;
+        padding: 10px 20px;
+        font-weight: bold;
+        color: $beige;
+        font-size: 100%;
+        border: none;
+        border-radius: 5px;
+        background-color: $blue;
+    }
+}
+.order .form > input:focus,
+.form > .remark:focus {
+    border: 2px solid $darkgray;
+}
+.order > form > input:hover {
+    cursor: pointer;
+    background-color: $darkblue;
+}
+@media (max-width: 600px) {
+    .order {
+        width: 90%;
+        padding: 10px 5px;
+        .form {
+            width: 95%;
+            > input {
+                width: 95%;
+            }
+            > label {
+                font-size: 100%;
+            }
+        }
+        > form > input {
+            margin-top: 10px;
+        }
+    }
+}

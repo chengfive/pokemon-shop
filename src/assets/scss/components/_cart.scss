@@ -1,0 +1,142 @@
+.cart-table {
+    border-collapse: collapse;
+    text-align: center;
+    margin: 50px auto 0;
+    font-weight: bold;
+    color: $black;
+    background-color: $beige;
+    border: 2px solid $gray;
+    > tr:nth-child(1) {
+        background-color: $blue;
+        color: $beige;
+        font-size: 175%;
+    }
+    > .total-price {
+        text-align: right;
+        font-size: 175%;
+        background-color: $blue;
+        color: $beige;
+        > td {
+        padding: 5px 20px 5px 0;
+        }
+    }
+    > .coupon-price {
+        @extend .total-price;
+    }
+    > tr > td {
+        padding: 5px 45px;
+    }
+    .cart-tr {
+        font-size: 150%;
+        border-bottom: 1px solid $gray;
+        > td:nth-child(1) {
+        width: 300px;
+        padding: 5px 0 5px 45px;
+        text-align: left;
+        }
+        > td > img {
+        width: 30%;
+        vertical-align: middle;
+        margin-right: -10px;
+        }
+    }
+}
+.trash-img {
+    border: 1px solid $red;
+    border-radius: 5px;
+    padding: 5px;
+}
+.trash-img:hover {
+    cursor: pointer;
+    background-color: $red;
+    content: url("../../assets/trashCan2.png");
+}
+.line-through {
+    text-decoration: line-through $orange;
+}
+
+@media (max-width: 1200px) {
+    .cart-table {
+        > tr:nth-child(1) {
+            font-size: 150%;
+        }
+        > .total-price {
+            font-size: 150%;
+        }
+        > tr > td {
+            padding: 5px 30px;
+        }
+        > .cart-tr {
+            font-size: 125%;
+            > td:nth-child(1) {
+                padding: 5px 0 5px 20px;
+            }
+        }
+    }
+}
+@media (max-width: 850px) {
+    .cart-table {
+        > tr:nth-child(1) {
+            font-size: 125%;
+        }
+        > .total-price {
+            font-size: 125%;
+        }
+        > tr > td {
+            padding: 5px 15px;
+        }
+        .cart-tr {
+            font-size: 110%;
+            > td:nth-child(1) {
+                width: 250px;
+                padding: 5px 0 5px 15px;
+            }
+            > td > img {
+                width: 25%;
+            }
+        }
+    }
+}
+@media (max-width: 600px) {
+    .cart-table {
+        > tr:nth-child(1) {
+            font-size: 100%;
+        }
+        > .total-price {
+            font-size: 100%;
+            > td {
+                padding: 5px 10px 5px 0;
+            }
+        }
+        > tr > td {
+            padding: 5px 5px;
+        }
+        .cart-tr {
+            font-size: 75%;
+            > td:nth-child(1) {
+                width: 115px;
+                padding: 5px 0 5px 5px;
+            }
+            > td > img {
+                width: 20%;
+                margin-right: -5px;
+            }
+        }
+    }
+    .delete {
+        width: 60px;
+    }
+}
+@media (max-width: 300px) {
+    .cart-table {
+        > tr:nth-child(1) {
+            font-size: 80%;
+        }
+        > .total-price {
+            font-size: 80%;
+        }
+    } 
+    .delete {
+        width: 35px;
+    }
+}

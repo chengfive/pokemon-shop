@@ -1,0 +1,63 @@
+.catalogue {
+    border: 2px solid $gray;
+    background-color: $beige;
+    width: 9%;
+    height: 100%;
+    margin-right: 1%;
+    font-size: 125%;
+    font-weight: bold;
+    color: $black;
+    user-select: none;
+    ul {
+        padding: 0;
+        margin: -2px 0 0;
+        > li {
+            cursor: pointer;
+            padding: 15px 0 15px 5px;
+            border-top: 2px solid $gray;
+        }
+    }
+    .active {
+        background-color: $blue;
+        color: $beige;
+    }
+    .disable {
+        pointer-events: none;
+    }
+}
+.catalogue ul > li:hover {
+    background-color: $blue;
+    color: $beige;
+}
+
+@media (max-width: 1200px) {
+    .catalogue {
+        width: 70%;
+        margin: 0 auto 20px;
+        font-size: 120%;
+        ul {
+            margin: 10px;
+            padding-top: 5px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            > li {
+                display: inline-block;
+                border: 2px solid $gray;
+                padding: 10px;
+                margin: 0 5px 10px;
+            }
+        }
+    }
+}
+@media (max-width: 600px) {
+    .catalogue {
+        width: 90%;
+        font-size: 100%;
+    }
+}
+@media (max-width: 570px) {
+    .catalogue {
+        font-size: 90%;
+    }
+}

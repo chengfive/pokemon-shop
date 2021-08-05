@@ -1,0 +1,80 @@
+.cart-page {
+    > .next {
+        width: 175px;
+        margin: 35px auto;
+        font-weight: bold;
+        font-size: 125%;
+        text-align: center;
+        > a {
+            color: $beige;
+            border-radius: 5px;
+            padding: 15px 20px;
+            background-color: $blue;
+        }
+    }
+} 
+.cart-page > .next > a:hover {
+    background-color: $darkblue;
+}
+.cart-empty {
+    width: 200px;
+    margin: 15% auto;
+    text-align: center;
+    font-size: 200%;
+    font-weight: bold;
+    color: $black;
+}
+.coupons {
+    margin: 50px auto 0;
+    display: flex;
+    justify-content: center;
+    > input {
+        width: 50%;
+        margin-right: -2px;
+        font-size: 125%;
+        padding: 4px;
+        color: $black;
+        font-weight: bold;
+        background-color: $white;
+        border: 2px solid $gray;
+    }
+    > button {
+        padding: 5px 10px;
+        font-size: 125%;
+        font-weight: bold;
+        background-color: $blue;
+        color: $beige;
+        border: none;
+    }
+}
+.coupons > input:focus {
+    border: 2px solid $darkgray;
+}
+.coupons > button:hover {
+    background-color: $darkblue;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .cart-page {
+        > .next {
+            width: 150px;
+            margin: 25px auto;
+            font-size: 100%;
+            > a {
+                padding: 10px;
+            }
+        }
+    } 
+    .coupons {
+        margin: 35px auto 0;
+        > input {
+            width: 175px;
+            font-size: 85%;
+        }
+        > button {
+            padding: 5px 5px;
+            font-size: 100%;
+        }
+    }
+}

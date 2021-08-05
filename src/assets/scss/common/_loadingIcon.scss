@@ -1,0 +1,30 @@
+.loading-icon {
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+
+    /* 邊框顏色 */
+    border: 3px solid #a6acb4;
+    border-top-color: $blue;
+
+    /* 元素在螢幕上置中 */
+    display: inline-block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+
+    /* 測試，從 0px 慢慢增加到 25px。然後最後改成 50%(正圓) */
+    border-radius: 50%;
+
+    /* 加上動畫效果 */
+    animation-name: loading_animation;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes loading_animation {
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
