@@ -6,20 +6,39 @@
 
 https://chengfive.github.io/pokemon-shop/
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### 簡介
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- 使用以 Vue CLI 4 為開發環境所完成的 SPA 電商網站
+- 使用 Vue Router 管理路由
+- 使用 Vuex 作為狀態儲存的容器
+- 使用 Heroku 建立後端資料進行串接
+- 使用 localStorage 儲存使用者登入狀態
 
-### Lints and fixes files
-```
-npm run lint
-```
+### 主要功能
+
+- 商品分類清單
+- 商品詳細資訊展示
+- 商品圖片延遲載入以加快網站載入速度
+- 商品查詢
+- 商品分頁器
+- 首頁廣告輪播
+- 等待載入時的遮罩效果與動畫
+- 訂單與結帳
+- 購物車
+- 優惠碼折價
+- 登入與登出
+- 適應不同解析度的版面配置
+
+### 使用技術
+
+- Vue CLI 4
+- Vue Router
+- Vuex
+- vue3-lazy
+- swiper
+- axios
+- SCSS
+- RWD
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
