@@ -18,7 +18,7 @@ https://chengfive.github.io/pokemon-shop/
 
 - 商品分類清單
 - 商品詳細資訊展示
-- 商品圖片延遲載入以加快網站載入速度
+- 商品圖片延遲載入以加快網頁載入速度
 - 商品查詢
 - 商品分頁器
 - 首頁廣告輪播
@@ -40,5 +40,5 @@ https://chengfive.github.io/pokemon-shop/
 - SCSS
 - RWD
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 圖片來源
+- google圖片(本網站為練習作品，圖片如有侵權麻煩告知，必會立刻刪除。)
