@@ -1,9 +1,10 @@
-# pokemon_shop
+# Pokemon Shop 電商網站
 
-## Project setup
-```
-npm install
-```
+![](./src/assets/demo.png)
+
+## Demo
+
+https://chengfive.github.io/pokemon-shop/
 
 ### Compiles and hot-reloads for development
 ```
