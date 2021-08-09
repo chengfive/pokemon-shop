@@ -11,7 +11,7 @@ https://chengfive.github.io/pokemon-shop/
 - 使用以 Vue CLI 4 為開發環境所完成的 SPA 電商網站
 - 使用 Vue Router 管理路由
 - 使用 Vuex 作為狀態儲存的容器
-- 使用 Heroku 建立後端資料(商品資訊、訂單、優惠碼、使用者購物車)進行串接   
+- 使用 Heroku 建立後端資料(商品資訊、訂單、優惠碼、使用者購物車)進行串接並操作資料修改   
   (https://pokemon-shop-server.herokuapp.com/)
 - 使用 localStorage 儲存使用者登入狀態
 
